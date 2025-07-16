@@ -120,3 +120,4 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
     </div>
   );
 }
+export default Globe;
