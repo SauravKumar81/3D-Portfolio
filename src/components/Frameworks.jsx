@@ -1,4 +1,4 @@
-import { OrbitingCircles } from "./OrbitingCircles";
+import OrbitingCircles from "../components/OrbitingCircles";
 
 export function Frameworks() {
   const skills = [
@@ -38,3 +38,4 @@ export function Frameworks() {
 const Icon = ({ src }) => (
   <img src={src} className="duration-200 rounded-sm hover:scale-110" />
 );
+export default Frameworks;
