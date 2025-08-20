@@ -1,14 +1,13 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Mern ChatApp",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "MERN-ChartAPP is a real-time chatbot application built with the MERN stack. It integrates AI to deliver instant, human-like responses and supports secure authentication, chat history, and real-time messaging. With a clean React UI and scalable backend, it ensures smooth and engaging conversations.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Real-Time Messaging – Seamless communication with WebSockets (Socket.IO).",
+      "Secure & Scalable – User authentication, chat history storage, and robust backend.",
+      
     ],
     href: "",
     logo: "",
