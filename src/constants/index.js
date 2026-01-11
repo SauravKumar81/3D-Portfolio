@@ -1,223 +1,358 @@
+// export const myProjects = [
+//   {
+//     id: 1,
+//     title: "Mern ChatApp",
+//     description:
+//       "MERN-ChartAPP is a real-time chatbot application built with the MERN stack. It integrates AI to deliver instant, human-like responses and supports secure authentication, chat history, and real-time messaging. With a clean React UI and scalable backend, it ensures smooth and engaging conversations.",
+//     subDescription: [
+//       "Real-Time Messaging – Seamless communication with WebSockets (Socket.IO).",
+//       "Secure & Scalable – User authentication, chat history storage, and robust backend.",
+      
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/accessories.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "C#",
+//         path: "/assets/logos/csharp.svg",
+//       },
+//       {
+//         id: 2,
+//         name: ".Net",
+//         path: "/assets/logos/dotnet.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "Ef Core",
+//         path: "/assets/logos/efcore.png",
+//       },
+//       {
+//         id: 4,
+//         name: "TailwindCSS",
+//         path: "/assets/logos/tailwindcss.svg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     title: "Authentication & Authorization System",
+//     description:
+//       "A secure authentication and authorization system using Auth0 for seamless user management.",
+//     subDescription: [
+//       "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
+//       "Implemented role-based access control (RBAC) for fine-grained user permissions.",
+//       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
+//       "Connected to a secure SQLite database for user data storage.",
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/auth-system.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "Auth0",
+//         path: "/assets/logos/auth0.svg",
+//       },
+//       {
+//         id: 2,
+//         name: "React",
+//         path: "/assets/logos/react.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "SQLite",
+//         path: "/assets/logos/sqlite.svg",
+//       },
+//       {
+//         id: 4,
+//         name: "TailwindCSS",
+//         path: "/assets/logos/tailwindcss.svg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     title: "Blazor Web App",
+//     description:
+//       "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+//     subDescription: [
+//       "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
+//       "Implemented API interactions using .NET Core for a robust backend.",
+//       "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
+//       "Integrated SQLite for efficient client-side database storage.",
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/blazor-app.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "Blazor",
+//         path: "/assets/logos/blazor.svg",
+//       },
+//       {
+//         id: 2,
+//         name: ".NET Core",
+//         path: "/assets/logos/dotnetcore.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "SQLite",
+//         path: "/assets/logos/sqlite.svg",
+//       },
+//       {
+//         id: 4,
+//         name: "TailwindCSS",
+//         path: "/assets/logos/tailwindcss.svg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 4,
+//     title: "C++ Game Engine",
+//     description:
+//       "A lightweight C++ game engine designed for 2D and 3D game development.",
+//     subDescription: [
+//       "Built a powerful rendering engine using OpenGL and C++.",
+//       "Developed a physics engine with collision detection and particle effects.",
+//       "Implemented a scripting system for easy game customization.",
+//       "Optimized performance with multi-threading and efficient memory management.",
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/game-engine.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "C++",
+//         path: "/assets/logos/cplusplus.svg",
+//       },
+//       {
+//         id: 2,
+//         name: "C#",
+//         path: "/assets/logos/csharp.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "Git",
+//         path: "/assets/logos/git.svg",
+//       },
+//       {
+//         id: 4,
+//         name: "Microsoft",
+//         path: "/assets/logos/microsoft.svg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 5,
+//     title: "WordPress Custom Theme",
+//     description:
+//       "A fully customizable WordPress theme optimized for performance and SEO.",
+//     subDescription: [
+//       "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
+//       "Integrated Tailwind CSS for modern styling and UI enhancements.",
+//       "Optimized SEO and page speed using Vite.js for fast builds.",
+//       "Implemented custom widgets and plugin compatibility for extended functionality.",
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/wordpress-theme.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "WordPress",
+//         path: "/assets/logos/wordpress.svg",
+//       },
+//       {
+//         id: 2,
+//         name: "HTML5",
+//         path: "/assets/logos/html5.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "CSS3",
+//         path: "/assets/logos/css3.svg",
+//       },
+//       {
+//         id: 4,
+//         name: "Vite.js",
+//         path: "/assets/logos/vitejs.svg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 6,
+//     title: "Online Learning Platform",
+//     description:
+//       "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+//     subDescription: [
+//       "Built using Blazor WebAssembly for a seamless SPA experience.",
+//       "Implemented video streaming with Azure Media Services.",
+//       "Added a quiz system with dynamic question generation and real-time grading.",
+//       "Integrated Stripe API for secure payment processing.",
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/elearning.jpg",
+//     tags: [
+//       {
+//         id: 1,
+//         name: "Blazor",
+//         path: "/assets/logos/blazor.svg",
+//       },
+//       {
+//         id: 2,
+//         name: "Azure",
+//         path: "/assets/logos/azure.svg",
+//       },
+//       {
+//         id: 3,
+//         name: "Stripe",
+//         path: "/assets/logos/stripe.svg",
+//       },
+//       {
+//         id: 4,
+//         name: "TailwindCSS",
+//         path: "/assets/logos/tailwindcss.svg",
+//       },
+//     ],
+//   },
+// ];
+
+
 export const myProjects = [
   {
     id: 1,
-    title: "Mern ChatApp",
+    title: "MERN Real-Time Chat App",
     description:
-      "MERN-ChartAPP is a real-time chatbot application built with the MERN stack. It integrates AI to deliver instant, human-like responses and supports secure authentication, chat history, and real-time messaging. With a clean React UI and scalable backend, it ensures smooth and engaging conversations.",
+      "A real-time chat application built using the MERN stack, supporting secure authentication, chat persistence, and instant messaging.",
     subDescription: [
-      "Real-Time Messaging – Seamless communication with WebSockets (Socket.IO).",
-      "Secure & Scalable – User authentication, chat history storage, and robust backend.",
-      
+      "Implemented real-time messaging using Socket.IO.",
+      "JWT-based authentication and protected routes.",
+      "Stored chat history and user data in MongoDB.",
+      "Responsive React UI with clean state management.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/ChatApp.jpg",
     tags: [
-      {
-        id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 2, name: "Express.js", path: "/assets/logos/express.svg" },
+      { id: 3, name: "React", path: "/assets/logos/react.svg" },
+      { id: 4, name: "Node.js", path: "/assets/logos/nodejs.svg" },
     ],
   },
+
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "JWT Authentication System",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A secure authentication and authorization system implementing JWT-based login and role handling.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Implemented JWT access and refresh token flow.",
+      "Secure password hashing and validation.",
+      "Role-based access logic for protected APIs.",
+      "RESTful API design using Express.js.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/auth.jpg",
     tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 2, name: "Express.js", path: "/assets/logos/express.svg" },
+      { id: 3, name: "JWT", path: "/assets/logos/jwt.svg" },
+      { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
     ],
   },
+
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Brainly Clone (MERN)",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A full-stack educational Q&A platform inspired by Brainly, supporting text, image, audio, and video-based questions.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Built a MERN-based platform for content posting and interaction.",
+      "Handled multimedia uploads and structured data storage.",
+      "Designed scalable backend APIs for content retrieval.",
+      "Created dynamic and responsive UI using React.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/brainly.jpg",
     tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 4, name: "Express.js", path: "/assets/logos/express.svg" },
     ],
   },
+
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Course Selling Platform",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A backend-driven course selling application with user management and content delivery logic.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Implemented user authentication and course access control.",
+      "Designed REST APIs for course creation and enrollment.",
+      "Managed structured data using MongoDB.",
+      "Focused on scalable backend architecture.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/course.jpg",
     tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
+      { id: 1, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 2, name: "Express.js", path: "/assets/logos/express.svg" },
+      { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 4, name: "JWT", path: "/assets/logos/jwt.svg" },
     ],
   },
+
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "CodeIDEx – Multi Code Runner",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A developer utility that allows users to write, run, and test multiple code snippets inside a single interface.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Designed a multi-language code execution workflow.",
+      "Built for learning, testing, and experimentation.",
+      "Focused on clean UI and fast execution logic.",
+      "Improved developer productivity through tooling.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/code-editor.jpg",
     tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
+      { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "HTML", path: "/assets/logos/html5.svg" },
+      { id: 4, name: "CSS", path: "/assets/logos/css3.svg" },
     ],
   },
+
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "Personal Developer Portfolio",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "A modern 3D-inspired portfolio website to showcase projects, skills, and GitHub work.",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Built using React, Vite, and Three.js.",
+      "Implemented smooth animations and interactive UI.",
+      "Showcases projects, experience, and GitHub profile.",
+      "Optimized for performance and responsiveness.",
     ],
-    href: "",
+    href: "https://github.com/SauravKumar81",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/assets/projects/portfolio.jpg",
     tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Three.js", path: "/assets/logos/threejs.svg" },
+      { id: 3, name: "Vite", path: "/assets/logos/vitejs.svg" },
+      { id: 4, name: "JavaScript", path: "/assets/logos/javascript.svg" },
     ],
   },
 ];
@@ -242,39 +377,42 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
+    title: "Hackathon & Project-Based Developer",
+    job: "Security, Automation & Visualization Projects",
     date: "2023-2024",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Built multiple hackathon and college projects focused on secure application design and system reliability.",
+      "Developed interactive map-based interfaces using MapsUI for better spatial data visualization.",
+      "Created industrial automation prototypes using C++ and Fatek PLC APIs as part of academic and hackathon challenges.",
+      "Designed desktop applications using Windows Forms and WPF with a focus on usability and responsiveness.",
+      "Implemented XML to SVG conversions using X-DOM to dynamically visualize structured data.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
+    title: "Back-End Developer (Hackathon Projects)",
+    job: "Automotive & Vehicle-to-Cloud Systems",
     date: "2023-2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Developed back-end systems during hackathons and academic projects for large-scale data ingestion and processing.",
+      "Built simulated vehicle-to-cloud communication systems for telemetry and diagnostics.",
+      "Implemented secure REST APIs using Node.js and Express, applying JWT-based authentication.",
+      "Applied data privacy and security best practices while handling application data.",
+      "Developed core logic for features such as OTA update simulation, real-time tracking, and remote-control workflows.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
+    title: "Open-Source & Hackathon Developer",
+    job: "GitHub Projects & Self-Learning",
     date: "2025-Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Actively developing and maintaining projects on GitHub, including full-stack and utility applications.",
+      "Built MERN-based applications such as authentication systems, chat apps, and educational platforms.",
+      "Created a personal developer portfolio using Three.js, React, Vite, and Web APIs.",
+      "Collaborated, iterated, and shipped features rapidly following hackathon-style development practices.",
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Jack",
